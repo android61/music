@@ -7,7 +7,7 @@ fun main() {
 
     var priceWithDiscount: Int = 0 // расчет полной скидки покупки
 
-    if (amount <= 1000) {
+    if (amount <= 1000) { priceWithDiscount = amount
         println("Сумма Ваших покупок $amount Вы купили менее 1000 руб., спасибо, но скидка Вам не полагается.")
     } else if (amount > 1_000 && amount<10_000) {
         priceWithDiscount = amount - discountStandart
